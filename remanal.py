@@ -44,14 +44,14 @@ def plot_sleep_stages(sleep_stages, fs):
     st.pyplot(plt.gcf())
 
 def main():
-    st.title("EEG/EMG Signal Analysis App")
+    st.title("Sleep Stage Classification App")
     st.write("-Rithvik Sabnekar")
     st.write("Please wait at least 1 minute for detailed analytical graphs")
     st.markdown(f'<a href="https://drive.google.com/file/d/1TjXY6Ip_W_jfpFTThWZ2DmOIJ1OF99ZH/view?usp=sharing" download>Example Input file (S001R03.edf), source: https://www.physionet.org/content/eegmmidb/1.0.0/</a>', unsafe_allow_html=True)
 
 
     # Step 2: Data Upload
-    uploaded_file = st.file_uploader("Upload EEG/EMG data file (.edf type)", type=["edf"])
+    uploaded_file = st.file_uploader("Upload PSG data file (.edf type)", type=["edf"])
 
     if uploaded_file is not None:
         # Step 3: Data Preprocessing
