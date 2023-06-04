@@ -1,0 +1,5 @@
+pyedflib
+numpy
+matplotlib
+scipy
+streamlit
